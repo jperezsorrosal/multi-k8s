@@ -1,6 +1,6 @@
-docker build -t jperezsl/multi-client:latest -t jperezsl/multi-client:$SHA -f .client/Dockerfile ./client
-docker build -t jperezsl/multi-server:latest -t jperezsl/multi-server:$SHA -f .server/Dockerfile ./server
-docker build -t jperezsl/multi-worker:latest -t jperezsl/multi-worker:$SHA -f .worker/Dockerfile ./worker
+docker build -t jperezsl/multi-client:latest -t jperezsl/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t jperezsl/multi-server:latest -t jperezsl/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t jperezsl/multi-worker:latest -t jperezsl/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push jperezsl/multi-client:latest
 docker push jperezsl/multi-server:latest
