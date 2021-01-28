@@ -11,6 +11,6 @@ docker push jperezsl/multi-server:$SHA
 docker push jperezsl/multi-worker:$SHA
 
 kubectl apply -f k8s
-kubectl set image deployments/server-deployment server=stephengrider/multi-server:$SHA
-kubectl set image deployments/client-deployment client=stephengrider/multi-client:$SHA
-kubectl set image deployments/worker-deployment worker=stephengrider/multi-worker:$SHA
+kubectl set image deployments/server-deployment server=jperezsl/multi-server:$SHA
+kubectl set image deployments/client-deployment client=jperezsl/multi-client:$SHA
+kubectl set image deployments/worker-deployment worker=jperezsl/multi-worker:$SHA
